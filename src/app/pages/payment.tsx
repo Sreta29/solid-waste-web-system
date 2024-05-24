@@ -7,8 +7,6 @@ function Payment() {
   return (
     <div>
       Payment
-      <Notification />
-      <OrderDetails />
       <Rating />
     </div>
   );

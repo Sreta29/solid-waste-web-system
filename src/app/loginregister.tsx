@@ -7,7 +7,6 @@ export function Login() {
     <div>
       Login
       <Navigation />
-      <Welcome />
     </div>
   );
 }
@@ -17,7 +16,6 @@ export function Register() {
     <div>
       Register
       <Login />
-      <Welcome />
     </div>
   );
 }

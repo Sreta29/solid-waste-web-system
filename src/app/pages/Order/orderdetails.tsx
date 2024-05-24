@@ -6,7 +6,6 @@ function OrderDetails() {
   return (
     <div>
       OrderDetails
-      <OrderForm />
       <Payment />
     </div>
   );

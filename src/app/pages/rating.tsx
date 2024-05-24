@@ -3,13 +3,7 @@ import Notification from "./notification";
 import Payment from "./payment";
 
 function Rating() {
-  return (
-    <div>
-      Rating
-      <Notification />
-      <Payment />
-    </div>
-  );
+  return <div>Rating</div>;
 }
 
 export default Rating;

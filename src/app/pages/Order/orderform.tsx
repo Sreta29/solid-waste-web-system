@@ -6,7 +6,6 @@ function OrderForm() {
   return (
     <div>
       OrderForm
-      <Navigation />
       <OrderDetails />
     </div>
   );

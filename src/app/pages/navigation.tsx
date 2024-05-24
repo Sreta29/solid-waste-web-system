@@ -10,7 +10,6 @@ function Navigation() {
   return (
     <div>
       Navigation
-      <Login />
       <HomePage />
       <OrderForm />
       <Payment />

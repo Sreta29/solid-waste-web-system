@@ -9,8 +9,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        inputbox: "text-black",
         default:
-          "bg-[#0071D1] text-white shadow-sm hover:bg-[#0054A6] rounded-full",
+          "bg-[#0071D1] text-white shadow-sm hover:bg-[#0054A6] rounded-full w-32",
         ogdefault:
           "bg-primary text-primary-foreground shadow hover:bg-primary/90",
         destructive:

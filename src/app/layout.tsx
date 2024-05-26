@@ -20,14 +20,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={inter.className}>
+      <body
+        className={`
+          h-dvh
+          bg-background
+          antialiased
+          ${inter.className}
+        `}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           {children}
         </ThemeProvider>
       </body>

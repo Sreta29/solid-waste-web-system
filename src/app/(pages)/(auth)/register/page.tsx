@@ -1,55 +1,47 @@
 import React from "react";
 import hakmilik from "@/assets/logo-hakmilik.png";
 import Image from "next/image";
-import { Input } from "@nextui-org/input";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 function RegisterPage() {
   return (
     <>
-      <div className="h-full w-full flex">
-        <div className="h-full w-full justify-centre items-center gap-5">
-          <div className="text-center">
-            <Image
-              src={hakmilik}
-              alt="Hakmilik Logo"
-              className="h-40 w-40 flex items-center justify-center p-2"
-            />
-            <h1 className="text-center mt-2 text-lg">Solid Waste Collection</h1>
-            <h2>Enter your email and password</h2>
-            <br />
-            <div className="w-96 border-2 border-black rounded-full flex items-center">
-              <Input type="text" label="Full Name" className="px-3 py-2" />
-            </div>
-            <br />
-            <div className="w-96 border-2 border-black rounded-full flex items-center">
-              <Input type="number" label="I.C. Number" className="px-3 py-2" />
-            </div>
-            <br />
-            <div className="w-96 border-2 border-black rounded-full flex items-center">
-              <Input type="email" label="Email" className="px-3 py-2" />
-            </div>
-            <br />
-            <div className="w-96 border-2 border-black rounded-full flex items-center">
-              <Input type="password" label="Password" className="px-3 py-2" />
-            </div>
-            <br />
-            <div className="w-96 border-2 border-black rounded-full flex items-center">
-              <Input
-                type="password"
-                label=" Confirm Password"
-                className="px-3 py-2"
-              />
-            </div>
-            <Link
-              href="/login"
-              className={buttonVariants({ variant: "default" })}
-            >
-              Sign Up
-            </Link>
+      <div className="h-full w-full flex flex-col justify-center items-center gap-3 max-w-96 mx-auto">
+        <Image src={hakmilik} alt="Hakmilik Logo" className="h-40 w-40" />
+        <h1 className="text-center mt-2 text-lg">Solid Waste Collection</h1>
+        <Input
+          type="text"
+          placeholder="Full Name"
+          className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
+        />
+        <Input
+          type="email"
+          placeholder="Email"
+          className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
+        />
+        <Input
+          type="password"
+          placeholder="Password"
+          className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
+        />
+        <Input
+          type="password"
+          placeholder="Confirm Password"
+          className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
+        />
+        <div className="flex justify-between w-full text-sm">
+          <div>
+            <input type="checkbox" />
+            <span className="ml-2">Remember Me</span>
           </div>
+
+          <Link href="/login">Forget Password?</Link>
         </div>
+        <Button variant={"default"} className="w-full">
+          Sign Up
+        </Button>
       </div>
     </>
   );

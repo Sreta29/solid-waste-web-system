@@ -31,17 +31,13 @@ function RegisterPage() {
           placeholder="Confirm Password"
           className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
         />
-        <div className="flex justify-between w-full text-sm">
-          <div>
-            <input type="checkbox" />
-            <span className="ml-2">Remember Me</span>
-          </div>
-
-          <Link href="/login">Forget Password?</Link>
-        </div>
         <Button variant={"default"} className="w-full">
           Sign Up
         </Button>
+        <div className="flex justify-between w-full text-sm">
+          <h2>Already have an account?</h2>
+          <Link href="/login">Log In</Link>
+        </div>
       </div>
     </>
   );

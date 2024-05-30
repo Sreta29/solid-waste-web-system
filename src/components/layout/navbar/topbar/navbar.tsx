@@ -1,8 +1,8 @@
 "use client";
-import { ModeToggle } from "../../modetoggleicon";
+import { ModeToggle } from "../../../modetoggleicon";
 import { usePathname as Pathname } from "next/navigation";
 import Navigation from "./navigation";
-import Logo from "./logo";
+import Logo from "../logo";
 
 function Navbar() {
   const pathname = Pathname();

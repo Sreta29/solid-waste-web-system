@@ -1,4 +1,5 @@
-import Navbar from "@/components/layout/navbar/navbar";
+import SideNav from "@/components/layout/navbar/sidebar/sidenav";
+import Navbar from "@/components/layout/navbar/topbar/navbar";
 import WrapperPage from "@/components/layout/wrapper/wrapper-page";
 
 export default function RootLayout({
@@ -8,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <WrapperPage navbar={<Navbar />}>
+      <WrapperPage navbar={<SideNav />}>
         <main
           className={`
                 border-forground

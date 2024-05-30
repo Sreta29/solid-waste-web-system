@@ -51,7 +51,7 @@ export default function WrapperPage({
         opacity: 0,
         transition: { duration: 0.75, ease: "easeInOut" },
       }}
-      className="h-full"
+      className="h-full flex "
     >
       {navbar && navbar}
       <motion.div

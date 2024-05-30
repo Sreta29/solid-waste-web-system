@@ -59,7 +59,7 @@ export default function WrapperPage({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
-        className={`h-full rounded-md border-blue-600 border-2 w-full`}
+        className={`h-full rounded-md border-[#0071D1] border-2 w-full`}
       >
         {children}
       </motion.div>

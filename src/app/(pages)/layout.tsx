@@ -1,5 +1,4 @@
 import SideNav from "@/components/layout/navbar/sidebar/sidenav";
-import Navbar from "@/components/layout/navbar/topbar/navbar";
 import WrapperPage from "@/components/layout/wrapper/wrapper-page";
 
 export default function RootLayout({

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/navbar/topbar/navbar";
-import WrapperPage from "@/components/layout/wrapper/wrapper-page";
 import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "SWS&CS - Website",
+  description:
+    "This is an admin site for Solid Waste System using Next js and ShadCN UI",
+};
 
 export default function RootLayout({
   children,

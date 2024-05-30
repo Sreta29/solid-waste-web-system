@@ -51,7 +51,7 @@ export default function WrapperPage({
         opacity: 0,
         transition: { duration: 0.75, ease: "easeInOut" },
       }}
-      className="h-full flex "
+      className="h-full flex p-2 gap-2"
     >
       {navbar && navbar}
       <motion.div
@@ -59,7 +59,7 @@ export default function WrapperPage({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
-        className={`h-full`}
+        className={`h-full rounded-md border-blue-600 border-2 w-full`}
       >
         {children}
       </motion.div>

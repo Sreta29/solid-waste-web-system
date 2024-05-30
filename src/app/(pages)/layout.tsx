@@ -12,13 +12,10 @@ export default function RootLayout({
       <WrapperPage navbar={<SideNav />}>
         <main
           className={`
-                border-forground
-                mx-auto
                 h-full
-                max-w-screen-2xl
                 space-y-4
                 overflow-auto
-                py-20
+                p-2
                 `}
         >
           {children}

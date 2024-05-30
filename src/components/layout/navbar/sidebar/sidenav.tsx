@@ -7,7 +7,7 @@ import { ModeToggle } from "../../../modetoggleicon";
 
 export default function SideNav() {
   return (
-    <div className="flex h-full flex-col p-2 ">
+    <div className="flex h-full flex-col">
       <Link
         className="mb-2 flex  items-end justify-start rounded-md bg-blue-600 p-4 h-40"
         href="/"

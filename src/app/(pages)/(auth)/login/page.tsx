@@ -15,12 +15,12 @@ function LoginPage() {
         <Input
           type="email"
           placeholder="Email"
-          className="w-full py-0 px-5 border-b-black rounded-full bg-white"
+          className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
         />
         <Input
           type="password"
           placeholder="Password"
-          className="w-full py-0 px-5 border-[#7B7B7B] rounded-full bg-white"
+          className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
         />
         <div className="flex justify-between w-full text-sm">
           <div>

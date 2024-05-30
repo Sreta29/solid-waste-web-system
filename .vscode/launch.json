@@ -5,7 +5,7 @@
       "name": "Next.js: debug server-side",
       "type": "node-terminal",
       "request": "launch",
-      "command": "bun run dev"
+      "command": "bun run dev --port 3010"
     },
     {
       "name": "Next.js: debug client-side",

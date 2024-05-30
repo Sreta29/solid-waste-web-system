@@ -69,7 +69,7 @@ export default function WrapperPage({
                 p-2
                 `}
         >
-          <h1 className="text-2xl uppercase font-bold">
+          <h1 className="px-5 pt-5 text-2xl uppercase font-bold">
             {pathname.replace("/", "")}
           </h1>
           {children}

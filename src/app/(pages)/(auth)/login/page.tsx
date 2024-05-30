@@ -1,9 +1,9 @@
 import React from "react";
 import hakmilik from "@/assets/logo-hakmilik.png";
 import Image from "next/image";
-import { Input } from "@nextui-org/input";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 function LoginPage() {
   return (

@@ -8,18 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <WrapperPage navbar={<SideNav />}>
-        <main
-          className={`
-                h-full
-                space-y-4
-                overflow-auto
-                p-2
-                `}
-        >
-          {children}
-        </main>
-      </WrapperPage>
+      <WrapperPage navbar={<SideNav />}>{children}</WrapperPage>
     </>
   );
 }

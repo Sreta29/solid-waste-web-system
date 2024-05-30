@@ -61,7 +61,19 @@ export default function WrapperPage({
         transition={{ ease: "easeInOut", duration: 0.75 }}
         className={`h-full rounded-md border-[#0071D1] border-2 w-full`}
       >
-        {children}
+        <main
+          className={`
+                h-full
+                space-y-4
+                overflow-auto
+                p-2
+                `}
+        >
+          <h1 className="text-2xl uppercase font-bold">
+            {pathname.replace("/", "")}
+          </h1>
+          {children}
+        </main>
       </motion.div>
       {footer && footer}
     </motion.div>

@@ -4,6 +4,7 @@ import NavLinks from "./nav-links";
 import { LogOut, PowerIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../../../modetoggleicon";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export default function SideNav() {
   return (
@@ -20,11 +21,21 @@ export default function SideNav() {
         <div className="flex flex-col gap-2">
           <NavLinks />
         </div>
-        <div className="flex gap-2">
-          <Button variant="outline" size="icon">
-            <LogOut className="w-6" />
-          </Button>
-          <ModeToggle />
+        <div className="flex gap-2 w-full justify-between">
+          <div>
+            <Avatar className="rounded-md">
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+          </div>
+          <div className="flex gap-2">
+            <Link href="/">
+              <Button variant="outline" size="icon">
+                <LogOut className="w-10" />
+              </Button>
+            </Link>
+            <ModeToggle />
+          </div>
         </div>
       </div>
     </div>

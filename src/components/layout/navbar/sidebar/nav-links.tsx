@@ -2,13 +2,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { HomeIcon, Moon, Sun } from "lucide-react";
+import { LayoutDashboard, ListTodo, Trash, Users } from "lucide-react";
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 
 const links = [
-  { name: "Dashboard", href: "/dashboard", icon: HomeIcon },
-  { name: "Settings", href: "/settings", icon: Sun },
+  { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
+  { name: "Order", href: "/order", icon: ListTodo },
+  { name: "Waste", href: "/waste", icon: Trash },
+  { name: "Collector", href: "/collector", icon: Users },
 ];
 
 export default function NavLinks() {

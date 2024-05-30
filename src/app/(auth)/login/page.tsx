@@ -30,7 +30,7 @@ function LoginPage() {
 
           <Link href="/login">Forget Password?</Link>
         </div>
-        <Link href={"/home"}>
+        <Link href={"/dashboard"}>
           <Button variant={"default"} className="w-full">
             Sign In
           </Button>

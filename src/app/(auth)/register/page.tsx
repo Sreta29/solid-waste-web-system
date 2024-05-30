@@ -31,7 +31,7 @@ function RegisterPage() {
           placeholder="Confirm Password"
           className="w-full py-5 px-5 border-[#7B7B7B] rounded-full bg-white"
         />
-        <Link href={"/home"}>
+        <Link href={"/dashboard"}>
           <Button variant={"default"} className="w-full">
             Sign Up
           </Button>

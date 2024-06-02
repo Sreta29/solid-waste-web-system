@@ -2,21 +2,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { FormInput, Home, ListChecks, Star } from "lucide-react";
+import { CreditCard, FormInput, Home, ListChecks, Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 
 const links = [
-  { name: "Home Page", href: "/user/(userpages)/home", icon: Home },
-  { name: "Order Form", href: "/user/(userpages)/orderform", icon: FormInput },
+  { name: "Home Page", href: "/user/home", icon: Home },
+  { name: "Order Form", href: "/user/orderform", icon: FormInput },
   {
     name: "Order Details",
-    href: "/user/(userpages)/orderdetails",
+    href: "/user/orderdetails",
     icon: ListChecks,
   },
-  { name: "Payment", href: "/user/(userpages)/payment", icon: Card },
-  { name: "Rating", href: "/user/(userpages)/rating", icon: Star },
+  { name: "Payment", href: "/user/payment", icon: CreditCard },
+  { name: "Rating", href: "/user/rating", icon: Star },
 ];
 
 export default function NavLinks() {

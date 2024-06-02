@@ -38,9 +38,9 @@ function LoginPage() {
     if (role === "system admin") {
       router.push("/dashboard");
     } else if (role === "user") {
-      router.push("/user/(userpages)/home");
+      router.push("/user/home");
     } else if (role === "wastage collector") {
-      router.push("/collector/(collectorpages)/home");
+      router.push("/collector/home");
     } else {
       // Handle other roles or errors
       alert("Invalid credentials or unknown role.");

@@ -11,7 +11,7 @@ import {
 } from "../../../../../components/ui/avatar";
 import NavLinks from "./collector-nav-links";
 
-export default function UserSideNav() {
+export default function CollectorSideNav() {
   return (
     <div className="flex h-full flex-col">
       <Link
